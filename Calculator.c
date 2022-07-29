@@ -28,6 +28,12 @@ int main()
       printf("Sum = %ld", x);
       break;
    default: printf("\nError");
+   case 2:
+      printf("Enter two numbers: \n");
+      scanf("%ld %ld", &num1, &num2);
+      x = num1 - num2;
+      printf("Subtraction = %ld", x);
+      break;
    }
 }
     

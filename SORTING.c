@@ -43,6 +43,15 @@ int main(void)
         insertion_sort(arr,n);
         arr_print(arr,n);
         break;
+        case 2:
+        selection_Sort(arr,n);
+        arr_print(arr,n);
+        break;
+        case 3:
+        bubble_sort(arr,n);
+        arr_print(arr,n);
+        break;
+}
    void insertion_sort(int arr[], int n)
 {
     int key, j;
@@ -57,11 +66,6 @@ int main(void)
     }
     return;
 }
-
-        case 2:
-        selection_Sort(arr,n);
-        arr_print(arr,n);
-        break;
 }
 void selection_Sort(int arr[], int n)
 {
@@ -75,6 +79,19 @@ void selection_Sort(int arr[], int n)
         int temp=arr[min];
         arr[min]=arr[i];
         arr[i]=temp;
+    }
+    return;
+}
+void bubble_sort(int arr[], int n)
+{
+    for (int i=0; i<n-1; i++){
+        for (int j = 0; j<n-i-1; j++){
+            if (arr[j]>arr[j + 1]){
+                int temp=arr[j];
+                arr[j]=arr[j + 1];
+                arr[j+1]=temp;
+            }
+        }
     }
     return;
 }

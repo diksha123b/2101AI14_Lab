@@ -39,7 +39,7 @@ int main()
       x = num1 * num2;
       printf("Product = %ld", x);
       break;
-         case 4:
+       case 4:
       printf("Enter Dividend: ");
       scanf("%d", &num1);
       printf("Enter Divisor: ");
@@ -54,14 +54,12 @@ int main()
      x = num1 / num2;
      printf("\nQuotient = %ld", x);
      break;
- case 5:
+      case 5:
       printf("Enter any number: \n");
       scanf("%ld", &num1);
       x = num1 * num1;
       printf("Square = %ld", x);
       break;
-      case 6:
-   return;
    default: printf("\nError");
    }
 }

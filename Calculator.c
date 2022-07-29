@@ -34,6 +34,27 @@ int main()
       x = num1 - num2;
       printf("Subtraction = %ld", x);
       break;
+      case 3:
+      printf("Enter two numbers: \n");
+      scanf("%ld %ld", &num1, &num2);
+      x = num1 * num2;
+      printf("Product = %ld", x);
+      break;
+        case 4:
+      printf("Enter Dividend: ");
+      scanf("%d", &num1);
+      printf("Enter Divisor: ");
+      scanf("%d", &num2);
+     //while loop checks for divisor whether it is zero or not
+     while(num2 == 0)
+     {
+        printf("\nDivisor cannot be zero."
+               "\nEnter divisor once again: ");
+        scanf("%d", &num2);
+     }
+     x = num1 / num2;
+     printf("\nQuotient = %ld", x);
+     break;
    }
 }
     

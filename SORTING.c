@@ -43,20 +43,7 @@ int main(void)
         insertion_sort(arr,n);
         arr_print(arr,n);
         break;
-         case 2:
-        selection_Sort(arr,n);
-        arr_print(arr,n);
-        break;
-        case 3:
-        bubble_sort(arr,n);
-        arr_print(arr,n);
-        break;
-        case 4:
-        merge_sort(arr,0,n-1);
-        arr_print(arr,n);
-        break;
-    
-    default: printf("\nError");
+     default: printf("\nError");
     }
     return 0;
 }

@@ -61,6 +61,7 @@ int main()
       x = num1 * num1;
       printf("Square = %ld", x);
       break;
+      
    }
 }
     

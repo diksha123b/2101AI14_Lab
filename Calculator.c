@@ -63,6 +63,7 @@ int main()
       break;
         case 6:
    return;
+   default: printf("\nError");
    }
 }
     

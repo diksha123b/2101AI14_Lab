@@ -43,21 +43,40 @@ int main(void)
         insertion_sort(arr,n);
         arr_print(arr,n);
         break;
-         case 2:
-      printf("Enter two numbers: \n");
-      scanf("%ld %ld", &num1, &num2);
-      x = num1 - num2;
-      printf("Subtraction = %ld", x);
-      case 3:
-      printf("Enter two numbers: \n");
-      scanf("%ld %ld", &num1, &num2);
-      x = num1 * num2;
-      printf("Product = %ld", x);
-      break;
-      break;
-     default: printf("\nError");
+   void insertion_sort(int arr[], int n)
+{
+    int key, j;
+    for (int i=1; i<n; i++) {
+        key=arr[i];
+        j=i-1;
+        while (j>=0 && arr[j]>key) {
+            arr[j+1] = arr[j];
+            j=j-1;
+        }
+        arr[j+1]=key;
     }
-    return 0;
+    return;
+}
+
+        case 2:
+        selection_Sort(arr,n);
+        arr_print(arr,n);
+        break;
+}
+void selection_Sort(int arr[], int n)
+{
+    int i, j, min;
+    for (i=0; i<n-1; i++){
+        min = i;
+        for (j=i+1; j<n; j++){
+          if (arr[j] < arr[min]){min=j;}
+        }
+
+        int temp=arr[min];
+        arr[min]=arr[i];
+        arr[i]=temp;
+    }
+    return;
 }
     return;
 }
